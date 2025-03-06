@@ -1,7 +1,7 @@
 import xlwings as xw
 
 # Open the data workbook (the file with your source data)
-data_wb = xw.Book('Book3.xlsx')
+data_wb = xw.Book('OG Source.xlsx')
 # Replace 'og source' with the exact sheet name if it differs
 data_sheet = data_wb.sheets['OG Source']
 
@@ -23,4 +23,4 @@ retention_wb.save()
 data_wb.close()
 retention_wb.close()
 
-print("Data successfully copied from Book3.xlsx to the 'og source' sheet in the retention analysis workbook.")
+print("Data successfully copied from OG Source.xlsx to the 'og source' sheet in the retention analysis workbook.")
